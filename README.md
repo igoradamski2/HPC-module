@@ -11,7 +11,7 @@ The bracket descent algorithm works by randomly placing a triangle on the initia
 
 LBFGS vs Bracket Descent  |  Newton vs Bracket Descent
 :-------------------------:|:-------------------------:
-![](cw2/figs/hw245.png =250x)  |  ![](cw2/figs/hw231.png =250x)
+![](cw2/figs/hw245.png)  |  ![](cw2/figs/hw231.png)
 
 ![Optimizer comparison](cw2/figs/hw245.png)
 
