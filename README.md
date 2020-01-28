@@ -13,7 +13,24 @@ LBFGS vs Bracket Descent  |  Newton vs Bracket Descent
 :-------------------------:|:-------------------------:
 ![](cw2/figs/hw245.png)  |  ![](cw2/figs/hw231.png)
 
-![Optimizer comparison](cw2/figs/hw245.png)
+### OpenMPI implementation of global bracket descent and more random networks
 
+A Fortran implementation of a modified version of bracket descent, using OpenMPI paralellization is given in [project/p12.f90](project/part1/p12.f90) and paralellization technique explained in the subroutine bdglobal_mpi.
+
+
+## 3D-Random Walk Network Generation
+
+The third coursework was mainly based on using [OpenMP](https://www.openmp.org) to paralellize simple network generation on the processor cores. A nice movie showing the end product of the network generation is presented below. The nodes are dropped from a point [0,X] and undergo a biased random walk until they either hit the ground (the x=0 axis) or are in close proximity to another node in the network, connecting to them.
+
+![Alt Text](cw3/figs/hw3movie.gif)
+
+## Random pedestrian model (distributed in OpenMP)
+
+A interesting model of pedestrians walking is implemented in [project/part2](project/part2). In this model pedestrians begin in a uniform grid in the middle of the coordinate system and start walking in random directions. Number of parameters determine their speed, 'connectivity' (once a person bumps into someone they start walking in similar directions) and direction randomness. Some movies illustrating that:
+
+
+![Alt Text](project/part2/p23.gif)  |  ![Alt Text](project/part2/p24.gif) | ![Alt Text](project/part2/p25.gif)
+
+## Wave propagation in a random-walk network
 
 
