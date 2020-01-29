@@ -28,9 +28,11 @@ The third coursework was mainly based on using [OpenMP](https://www.openmp.org) 
 
 A interesting model of pedestrians walking is implemented in [project/part2](project/part2). In this model pedestrians begin in a uniform grid in the middle of the coordinate system and start walking in random directions. Number of parameters determine their speed, 'connectivity' (once a person bumps into someone they start walking in similar directions) and direction randomness. Some movies illustrating that:
 
-
+:-------------------------:|:-------------------------:|:-------------------------:
 ![Alt Text](project/part2/p23.gif)  |  ![Alt Text](project/part2/p24.gif) | ![Alt Text](project/part2/p25.gif)
 
 ## Wave propagation in a random-walk network
 
+A differetial model was considered to propagate a wave through the random-walk generated network (as in the 3D animation above). The solution involves solving a partial differential equation numerically and is implmented in Fortran using OpenMPI paralellization.
 
+![Alt Text](project/part3/p23.gif)
